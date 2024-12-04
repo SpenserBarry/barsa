@@ -1,0 +1,269 @@
+body {
+    margin: 0; 
+    background: linear-gradient(white, #162447)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #162447, #1F4068); 
+    color: white;
+}
+
+#logoHeader {
+    display: flex;
+    align-items: center;
+}
+
+#logoHeader img {
+    width: 80px;
+    height: auto; 
+}
+
+#nomHeader {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #A50044;
+    color: #FFD700;
+}
+
+#navHeader {
+    display: flex;
+    gap: 40px;
+}
+
+#navHeader a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#navHeader a:hover {
+    color: #FFD700;
+}
+
+/* Media Queries pour une meilleure réactivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    #navHeader {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 10px; 
+    }
+    
+    #nomHeader {
+        font-size: 30px;
+    }
+}
+
+
+
+#photo-groupe {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#photo-groupe img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+#photo-groupe p {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 90px;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    padding: 10px;
+    z-index: 10; 
+    word-spacing: 5%;
+}
+
+
+
+#maillot {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#162447, white, #162447);
+    margin-top: 30px;
+    margin: auto;
+}
+
+#maillot span {
+    float: left;
+    text-align: left;
+    color: white;
+}
+
+#presentation {
+    overflow: hidden;
+}
+
+#presentation img {
+    float: right;
+    margin-right: 300px;
+    height: 400px;
+}
+
+#presentation span {
+    float: left;
+    width: 50%;
+}
+
+#maillot img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.maillot-domicile {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.maillot-domicile img {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#maillot-extérieur {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(white, black, white);
+    margin: auto;
+}
+
+#maillot-extérieur h1{
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#maillot-extérieur p {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#maillot-extérieur h3 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    justify-content: center; 
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.maillot-noir-angle img{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+#gauche img{
+    float: left;
+}
+
+#droite img{
+    float: right;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #162447, #A50044); 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 0px;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; 
+    margin-bottom: 20px; 
+}
+
+/* Réseaux sociaux */
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin-bottom: 40px; 
+}
+
+.social-media-text {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #A50044;
+    color: #FFD700;
+}
+
+.social-icon {
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+}
+
+/* Sponsors */
+.sponsors {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 50px;
+}
+
+.sponsor-icon {
+    width: 80px; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.sponsor-icon:hover {
+    transform: scale(1.2); 
+}

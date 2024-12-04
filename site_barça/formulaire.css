@@ -1,0 +1,236 @@
+body {
+    margin: 0; 
+    background: linear-gradient(#A50044, #162447)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #162447, #1F4068); 
+    color: white;
+}
+
+#logoHeader {
+    display: flex;
+    align-items: center;
+}
+
+#logoHeader img {
+    width: 80px;
+    height: auto; 
+}
+
+#nomHeader {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #A50044;
+    color: #FFD700;
+}
+
+#navHeader {
+    display: flex;
+    gap: 40px;
+}
+
+#navHeader a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#navHeader a:hover {
+    color: #FFD700;
+}
+
+/* Media Queries pour une meilleure réactivité */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    #navHeader {
+        flex-direction: column; 
+        gap: 10px; 
+        margin-top: 10px; 
+    }
+    
+    #nomHeader {
+        font-size: 30px;
+    }
+}
+
+
+.bande {
+    width: 100%;
+    height: 20px;
+    display: flex; 
+}
+
+.bande::before, .bande::after {
+    content: "";
+    flex: 1;
+}
+
+.bande::before {
+    background: linear-gradient(135deg, #A50044, blue) 
+}
+
+.bande::after {
+    background: linear-gradient(135deg, blue, #A50044) 
+}
+
+
+.slogan h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #D4AF37;
+    text-shadow: #162447 10px 5px 5px;
+
+    font-weight: 700;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+/* Style du conteneur principal */
+.container {
+    background-position: center;
+    width: 700px;
+    color: #FFD700;
+    margin: 100px auto 100px auto;
+    background-color: #162447;
+    padding: 50px;
+    box-shadow: 30px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-left-color: #003366;
+    border-right-color: #A50044;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Style des titres */
+h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/* Style des étiquettes (labels) */
+label {
+    font-weight: bold;
+    margin-top: 40px;
+    display: block;
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    text-align: left;
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+    background-color: #A50044;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #162447, #A50044); 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+    width: 100%; 
+    margin-bottom: 0px;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px; 
+    margin-bottom: 20px; 
+}
+
+/* Réseaux sociaux */
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 20px;
+    margin-bottom: 40px; 
+}
+
+.social-media-text {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #A50044;
+    color: #FFD700;
+}
+
+.social-icon {
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+}
+
+/* Sponsors */
+.sponsors {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 50px;
+}
+
+.sponsor-icon {
+    width: 80px; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+
+.sponsor-icon:hover {
+    transform: scale(1.2); 
+}
